@@ -1,0 +1,13 @@
+name: Test CI/CD
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Chekout code
+        uses: actions/chekout@v3
+
+      -  name: Print message
+         run: echo "Github Actions работает!"
